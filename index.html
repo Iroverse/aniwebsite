@@ -704,22 +704,26 @@
   <h2 class="section-title font-display">Accelerate Your Team's Efficiency</h2>
   <p class="section-sub">Connect directly with our principal partners to eliminate internal organizational friction and integrate targeted workforce structures.</p>
 
-  <form class="contact-form" onsubmit="handleSubmit(event)">
+<form action="https://api.web3forms.com/submit" method="POST" class="contact-form">
+    <input type="hidden" name="access_key" value="96891052-cd3f-4196-948c-b467eb648798">
+    
     <div class="form-row">
-      <input class="form-input" type="text" placeholder="First Name" required>
-      <input class="form-input" type="text" placeholder="Last Name" required>
+      <input class="form-input" type="text" name="first_name" placeholder="First Name" required>
+      <input class="form-input" type="text" name="last_name" placeholder="Last Name" required>
     </div>
-    <input class="form-input" type="email" placeholder="Work Email" required>
-    <input class="form-input" type="text" placeholder="Company / Organization">
-    <select class="form-input">
+    <input class="form-input" type="email" name="email" placeholder="Work Email" required>
+    <input class="form-input" type="text" name="company" placeholder="Company / Organization">
+    
+    <select class="form-input" name="support_needed" required>
       <option value="" disabled selected>I want support with…</option>
-      <option>HR Process Consultation</option>
-      <option>Management & Team Optimization</option>
-      <option>AM Recruitment & Production Staffing</option>
-      <option>Organizational Optimization Audit</option>
-      <option>Other Advisory Services</option>
+      <option value="HR Process Consultation">HR Process Consultation</option>
+      <option value="Management & Team Optimization">Management & Team Optimization</option>
+      <option value="AM Recruitment & Production Staffing">AM Recruitment & Production Staffing</option>
+      <option value="Organizational Optimization Audit">Organizational Optimization Audit</option>
+      <option value="Other Advisory Services">Other Advisory Services</option>
     </select>
-    <textarea class="form-input" placeholder="Tell us about your structural team or scaling goals…"></textarea>
+    
+    <textarea class="form-input" name="message" placeholder="Tell us about your structural team or scaling goals…"></textarea>
     <button type="submit" class="form-submit">Initiate Consultation →</button>
   </form>
 </section>
